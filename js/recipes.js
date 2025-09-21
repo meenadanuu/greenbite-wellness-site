@@ -12,7 +12,7 @@ var recipes = [];                                                               
 
 
 // load recipes JSON
-fetch("../js/json/recipes.json")
+fetch("js/json/recipes.json")
 .then(function(response){ 
     return response.json(); })                                                  // Parse JSON response
 .then(function(data){
@@ -35,12 +35,12 @@ function showRecipes(list){
 
         // image path added here
         card.innerHTML =
-            '<img src="../images/' + recipe.image + '" alt="' + recipe.name + '"><br>' +
+            '<img src="images/' + recipe.image + '" alt="' + recipe.name + '"><br>' +
             '<div style="text-align:center;">' +
             '<strong>' + recipe.name + '</strong><br>' +
-            recipe.description + '<br>' +
-            'Category: <em>' + recipe.category + '</em>' +
-            '</div>';
+        recipe.description + '<br>' +
+        'Category: <em>' + recipe.category + '</em>' +
+        '</div>';
 
 
         // click card to open modal

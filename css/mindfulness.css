@@ -66,3 +66,31 @@ h1 {
   font-size: 18px;                                      /* Text size for completed sessions */
   color: rgb(93, 64, 55);                             /* Brownish text color */
 }
+
+/* ambient sound player section */
+.ambient-sound-section {
+  margin: 30px auto;                              /* Center section and add vertical spacing */
+  padding: 20px;                                  /* Inner spacing */
+  width: 300px;                                   /* Section width */
+  background-color: rgb(255, 248, 225);         /* Light background */
+  border: 2px solid rgb(211, 84, 0);            /* Optional border */
+  border-radius: 10px;                            /* Rounded corners */
+  text-align: center;                             /* Center button inside */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);        /* Soft shadow */
+}
+
+/* play/pause button */
+#soundToggle {
+  padding: 10px 20px;
+  background-color: rgb(211, 84, 0);            /* Dark orange */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#soundToggle:hover {
+  background-color: rgb(255, 173, 96);          /* Lighter orange on hover */
+}
