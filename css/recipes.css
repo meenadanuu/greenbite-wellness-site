@@ -102,7 +102,7 @@ h1 {
 }
 
 
-@media (max-width: 760px) {
+@media (max-width: 600px) {
     #recipesContainer {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
