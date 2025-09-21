@@ -11,17 +11,13 @@
 }
 
 
-/* Logo link should look like branding, not a hyperlink */
+/* logo styling */
 .logo {
-    font-size: 28px;
+    font-size: 28px;                            /* Larger font for logo */
     font-weight: bold;
-    color: white;                   /* make it white */
-    text-decoration: none;            /* remove underline */
-    cursor: pointer;
-}
-
-.logo:hover {
-    color: #ffad60;            /* optional: orange hover effect */
+    color: white;              /* make it white */
+    text-decoration: none;     /* remove underline */
+    cursor: pointer;                          /* Bold text */
 }
 
 
