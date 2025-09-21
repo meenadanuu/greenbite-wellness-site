@@ -62,7 +62,7 @@
 
 
 /* mobile menu */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .nav-links {
         display: none;                                      /* hide links by default on mobile */
         flex-direction: column;                             /* Stack vertically */
