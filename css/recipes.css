@@ -1,0 +1,115 @@
+/* body styles */
+body {
+    font-family: Arial;                                     /* Default font for the page */            
+    background-color: rgb(255, 248, 225);                 /* Light cream background */
+    padding: 20px;                                          /* Space around the page content */
+}
+
+
+/* page title */
+h1 {
+    text-align: center;                                     /* Center the heading */
+    color: rgb(110, 44, 0);                               /* Dark brown text color */
+    font-size: 40px;                                        /* Large font size */
+}
+
+
+/* search and category filter inputs */
+#searchInput, #categoryFilter {
+    display: block;                                         /* Each input takes its own line */
+    margin: 10px auto;                                      /* Center horizontally with vertical spacing */
+    padding: 10px;                                          /* Inner spacing */
+    width: 50%;                                             /* Half the page width */
+    font-size: 16px;                                        /* Text size */
+}
+
+
+/* recipes container (grid layout) */
+#recipesContainer {
+    display: grid;                                          /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr);                  /* 4 columns of equal width */
+    gap: 20px;                                              /* Space between grid items */
+    justify-items: center;                                  /* Center items horizontally */
+    margin-top: 20px;                                       /* Space above the grid */
+    margin-bottom: 40px;                                    /* Space below the grid */
+}
+
+
+/* recipe card styling */
+.card {
+   background-color: rgb(240, 225, 202);                  /* Light beige background */
+    border-radius: 10px;                                    /* Rounded corners */
+    box-shadow: 2px 2px 5px rgb(204, 204, 204);           /* Subtle shadow */
+    text-align: center;                                     /* Center text inside card */
+    overflow: hidden;                                       /* Hide overflow content */
+    width: 200px;                                           /* Fixed width for all cards */
+}
+
+
+/* card images */
+.card img {
+    width: 100%;                                            /* Fill card width */
+    height: 150px;                                          /* Fixed height */
+    object-fit: cover;                                      /* Crop image to cover area without distortion */
+}
+
+
+/* Card text */
+.card h3 {
+    margin: 10px 0 5px 0;                                   /* Top and bottom spacing */
+}
+
+.card p {
+    margin: 5px 0;                                          /* Spacing for paragraph text */
+}
+
+
+/* modal (overlay) */
+.modal {
+    display: none;                                          /* hidden by default */
+    position: fixed;                                        /* Fixed to viewport */
+    top: 0;                                                 /* Start at top */
+    left: 0;                                                /* Start at left */
+    width: 100%;                                            /* Full width */
+    height: 100%;                                           /* Full height */
+    background-color: rgba(0,0,0,0.5);                    /* Semi-transparent dark overlay */
+    justify-content: center;                                /* Center modal horizontally */
+    align-items: center;                                    /* Center modal vertically */
+    z-index: 1000;                                          /* On top of other elements */
+}
+
+
+/* modal box */
+.modal-content {
+    background-color: rgb(255, 248, 225);                 /* Light cream background */
+    padding: 20px;                                          /* Inner spacing */
+    border-radius: 10px;                                    /* Rounded corners */
+    width: 80%;                                             /* Responsive width */
+    max-width: 600px;                                       /* Maximum width */
+    position: relative;                                     /* For positioning close button */
+    overflow-y: auto;                                       /* Scroll if content is long */
+    max-height: 90%;                                        /* Keep modal within viewport height */
+}
+
+
+/* close button */
+.close {
+    position: absolute;                                     /* Positioned relative to modal-content */
+    top: 10px;                                              /* Distance from top */
+    right: 20px;                                            /* Distance from right */
+    font-size: 24px;                                        /* Large font for visibility */
+    cursor: pointer;                                        /* Pointer cursor on hover */
+}
+
+
+/* mobile view */
+@media (max-width: 760px) {
+    #recipesContainer {
+        grid-template-columns: repeat(2, 1fr);              /* 2 columns on mobile */
+        gap: 15px;                                          /* Slightly smaller gap for mobile */
+    }
+
+    .card img {
+        height: 120px;                                      /* Smaller image height for mobile */
+    }
+}

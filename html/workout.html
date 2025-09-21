@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Generator - GreenBite</title>
+
+  <!-- Favicon + PWA -->
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#d35400">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/navfooter.css">
+  <link rel="stylesheet" href="../css/workout.css">
+
+  <!-- JS -->
+  <script src="../js/navfooter.js" defer></script>
+  <script src="../js/workout.js" defer></script>
+
+</head>
+<body>
+
+
+  <!-- workout selection section -->
+  <section class="workout-selection reveal">
+    <h1>Workout Generator</h1><br>
+
+
+    <!-- select body part for workout -->
+    <label for="bodyPart">Select Body Part:</label>
+    <select id="bodyPart">
+      <option value="Full Body">Full Body</option>
+      <option value="Arms">Arms</option>
+      <option value="Legs">Legs</option>
+      <option value="Core">Core</option>
+    </select>
+
+
+    <!-- select equipment option -->
+    <label for="equipment">Select Equipment:</label>
+    <select id="equipment">
+      <option value="None">None</option>
+      <option value="Dumbbells">Dumbbells</option>
+      <option value="Resistance Band">Resistance Band</option>
+    </select>
+
+    <button id="generateBtn">Generate Workout</button>
+  </section>
+
+  
+  <!-- workout plan section -->
+  <section class="workout-plan reveal">
+    <h2>Your Workout Plan:</h2>
+    <ul id="workoutList"></ul>
+
+    <h2>Current Exercise:</h2>
+    <div id="exerciseName">---</div>
+    <div id="countdown">0</div>
+  </section>
+
+
+</body>
+</html>

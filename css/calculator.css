@@ -1,0 +1,67 @@
+/* body styles */
+body {
+    font-family: Arial;                                      /* Sets the default font */
+    padding: 20px;                                           /* Adds space inside the body */
+    background-color: rgb(255, 248, 225);                  /* Light cream background */
+}
+
+
+/* headings */
+h1, h2, h3 {
+    color: rgb(110, 44, 0);                                /* Dark brown color for all headings */
+}
+
+h1 {
+    text-align: center;                                      /* Center the main heading */
+    font-size: 40px;                                         /* Large font size for main heading */
+}
+
+
+/* form labels */
+form label {
+    display: inline-block;                                  /* Allows setting a fixed width */
+    width: 120px;                                           /* Labels take up 120px space */
+}
+
+
+/* form inputs and selects ===== */
+input, select {
+    padding: 5px;                                           /* Inner spacing for better readability */
+}
+
+
+/* buttons */
+button {
+    padding: 8px 15px;                                      /* Inner spacing for clickable area */
+    background-color: rgb(211, 84, 0);                    /* Dark orange button */
+    color: rgb(255, 255, 255);                            /* White text */
+    border: none;                                           /* Remove default border */
+    border-radius: 5px;                                     /* Rounded corners */
+    cursor: pointer;                                        /* Pointer cursor on hover */
+}
+
+
+/* button hover effect */
+button:hover {
+    background-color: rgb(255, 173, 96);                  /* Light orange on hover */
+}
+
+
+/* progress bar container */
+.progress-bar {
+    width: 100%;                                            /* Full width container */
+    background-color: rgb(204, 204, 204);                 /* Light gray background */
+    border-radius: 5px;                                     /* Rounded corners */
+    height: 20px;                                           /* Fixed height */
+    margin: 5px 0 15px 0;                                   /* Top and bottom spacing */
+}
+
+
+/* progress bar fill */
+.progress-bar div {
+    height: 100%;                                           /* Fill entire height of container */
+    background-color: rgb(110, 44, 0);                    /* Dark brown fill color */
+    width: 0%;                                              /* Initial width (to be updated dynamically) */
+    border-radius: 5px;                                     /* Rounded corners */
+    transition: width 1s;                                   /* Smooth animation when width changes */
+}

@@ -1,0 +1,68 @@
+/* body styles */
+body {
+  font-family: Arial;                                   /* Default font for the page */
+  background-color: rgb(255, 248, 225);               /* Light cream background */
+  padding: 20px;                                        /* Space inside the body */
+  text-align: center;                                   /* Center inline content */
+}
+
+
+/* page title */
+h1 {
+  color: rgb(110, 44, 0);                             /* Dark brown text color */
+  margin-bottom: 20px;                                  /* Space below the heading */
+  font-size: 40px;                                      /* Large font size */
+}
+
+
+/* breathing circle */
+.breathing-container {
+  margin: 30px auto;                                    /* Center the circle and add vertical spacing */
+  width: 200px;                                         /* Circle width */
+  height: 200px;                                        /* Circle height */
+  border-radius: 50%;                                   /* Makes it a perfect circle */
+  background-color: rgb(211, 84, 0);                  /* Dark orange background */
+  opacity: 0.7;                                         /* Slightly transparent */
+  display: flex;                                        /* Use flex to center text inside */
+  align-items: center;                                  /* Vertically center text */
+  justify-content: center;                              /* Horizontally center text */
+  font-size: 24px;                                      /* Text size inside circle */
+  color: white;                                       /* White text */
+  transition: all 4s ease-in-out;                       /* Smooth animation for expansion */
+}
+
+
+/* timer section */
+.timer-section {
+  margin-top: 30px;                                     /* Space above timer section */
+}
+
+.timer-section input {
+  padding: 8px;                                         /* Inner spacing */
+  width: 80px;                                          /* Fixed input width */
+  font-size: 16px;                                      /* Text size */
+  margin-right: 5px;                                    /* Space between input and button */
+}
+
+.timer-section button {
+  padding: 8px 12px;                                    /* Inner spacing */
+  background-color: rgb(211, 84, 0);                  /* Dark orange button */
+  border: none;                                         /* Remove default border */
+  border-radius: 4px;                                   /* Rounded corners */
+  color: white;                                       /* White text */
+  cursor: pointer;                                      /* Pointer cursor on hover */
+}
+
+
+/* button hover effect */
+.timer-section button:hover {
+  background-color: rgb(255, 173, 96);                /* Lighter orange on hover */
+}
+
+
+/* completed sessions section */
+.completed-sessions {
+  margin-top: 20px;                                     /* Space above this section */
+  font-size: 18px;                                      /* Text size for completed sessions */
+  color: rgb(93, 64, 55);                             /* Brownish text color */
+}

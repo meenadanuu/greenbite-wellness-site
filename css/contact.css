@@ -1,0 +1,115 @@
+/* body styles */
+body {
+  font-family: Arial;                                         /* Set default font */
+  background-color: rgb(255, 248, 225);                     /* Light cream background */
+  padding: 20px;                                              /* Space around content */
+  text-align: center;                                         /* Center inline elements by default */
+}
+
+
+/* contact section headings */
+.contact-section h1, .contact-section h2 {
+  color: rgb(110, 44, 0);                                   /* Dark brown heading color */
+  margin-bottom: 20px;                                        /* Space below heading */
+  font-size: 40px;                                            /* Large font size */
+}
+
+
+/* contact form */
+form {
+  max-width: 500px;                                           /* Limit form width */
+  margin: 0 auto 30px auto;                                   /* Center form and add space below */
+  text-align: left;                                           /* Left-align form elements */
+}
+
+
+/* form labels */
+label {
+  display: block;                                             /* Stack labels above inputs */
+  margin: 10px 0 5px;                                         /* Top and bottom spacing */
+  font-weight: bold;                                          /* Bold text */
+}
+
+
+/* input and textarea styling */
+input, textarea {
+    font-family: Arial;                                       /* Consistent font */
+    font-size: 16px;                                          /* Text size */
+    padding: 8px;                                             /* Inner spacing */
+    width: 100%;                                              /* Full width of container */
+    box-sizing: border-box;                                   /* Include padding in width */
+}
+
+
+/* placeholder text styling */
+input::placeholder,
+textarea::placeholder {
+    font-family: Arial;                                       /* Matches input font */
+    font-size: 16px;                                          /* Text size */
+    color: rgb(136, 136, 136);                              /* Gray placeholder text */
+}
+
+
+/* make textarea adjustable */
+textarea {
+    min-height: 100px;                                        /* Minimum height */
+    resize: vertical;                                         /* User can adjust vertically only */
+}
+
+
+/* submit button */
+button {
+  padding: 10px 15px;                                         /* Inner spacing */
+  font-size: 16px;                                            /* Text size */
+  background-color: rgb(211, 84, 0);                        /* Dark orange */
+  color: white;                                             /* White text */
+  border: none;                                               /* Remove default border */
+  border-radius: 4px;                                         /* Rounded corners */
+  cursor: pointer;                                            /* Pointer on hover */
+}
+
+
+/* button hover effect */
+button:hover {
+  background-color: rgb(255, 173, 96);                       /* Lighter orange on hover */
+}
+
+
+/* map container */
+.map-container {
+  margin: 20px 0;                                              /* Vertical spacing */
+  border: 2px solid rgb(204, 204, 204);                      /* Light gray border */
+  border-radius: 10px;                                         /* Rounded corners */
+  overflow: hidden;                                            /* Clip overflowing map content */
+}
+
+
+/* FAQ section */
+.faq {
+  max-width: 600px;                                             /* Limit FAQ width */
+  margin: 20px auto;                                            /* Center and spacing */
+  text-align: left;                                             /* Left-align questions and answers */
+}
+
+
+/* FAQ questions (buttons) */
+.faq-question {
+  width: 100%;                                                   /* Full width */
+  text-align: left;                                              /* Align text to left */
+  padding: 10px;                                                 /* Inner spacing */
+  background-color: rgb(211, 84, 0);                           /* Dark orange background */                  
+  color: white;                                                /* White text */
+  border: none;                                                  /* Remove border */
+  border-radius: 5px;                                            /* Rounded corners */
+  margin-bottom: 5px;                                            /* Space between questions */
+  cursor: pointer;                                               /* Pointer cursor */
+}
+
+
+/* FAQ answers (initially hidden) */
+.faq-answer {
+  padding: 10px;                                                 /* Inner spacing */
+  background-color: rgb(255, 248, 225);                        /* Light cream background */
+  border-radius: 5px;                                            /* Rounded corners */
+  display: none;                                                 /* Hidden by default */
+}

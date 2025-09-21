@@ -1,0 +1,92 @@
+/* body styles */
+body {
+  font-family: Arial;                             /* Sets the font for the page */
+  background-color: rgb(255, 248, 225);         /* Light cream background */
+  padding: 20px;                                  /* Adds space inside the body */
+  text-align: center;                             /* Centers all inline content */
+}
+
+
+/* workout selection section */
+.workout-selection h1 {
+  color: rgb(110, 44, 0);                       /* Dark brown heading */
+  margin-bottom: 20px;                            /* Space below heading */
+  font-size: 40px;                                /* Large heading size */
+}
+
+
+/* labels for select inputs */
+label {
+  display: block;                                 /* Makes label occupy full width */
+  margin: 10px 0 5px;                             /* Top, right/left, bottom spacing */
+  font-weight: bold;                              /* Bold text */
+}
+
+
+/* dropdown select box styling */
+select {
+  padding: 8px;                                   /* Inner spacing */
+  font-size: 16px;                                /* Text size */
+  margin-bottom: 15px;                            /* Space below the dropdown */
+}
+
+
+/* button styling */
+button {
+  padding: 10px 15px;                             /* Inner spacing */
+  font-size: 16px;                                /* Text size */
+  background-color: rgb(211, 84, 0);            /* Dark orange button */
+  color: white;                                 /* White text */
+  border: none;                                   /* No border */
+  border-radius: 4px;                             /* Rounded corners */
+  cursor: pointer;                                /* Pointer cursor on hover */
+}
+
+
+/* button hover effect */
+button:hover {
+  background-color: rgb(255, 173, 96);          /* Lighter orange on hover */
+}
+
+
+/* workout plan section */
+.workout-plan {
+  margin-top: 30px;                               /* Space above section */
+  font-size: 20px;                                /* Text size for plan */
+  color: rgb(93, 64, 55);                       /* Brownish text */
+  font-style: italic;                             /* Italic style */
+}
+
+
+/* remove default list styles */
+.workout-plan ul {
+  list-style: none;                               /* No bullets */
+  padding: 0;                                     /* Remove padding */
+  margin-bottom: 20px;                            /* Space below list */
+}
+
+
+/* individual list items */
+.workout-plan li {
+  margin: 5px 0;                                  /* Vertical spacing between items */
+}
+
+
+/* current exercise display */
+#exerciseName {
+  font-size: 26px;                                /* Larger text */
+  font-weight: bold;                              /* Bold text */
+  margin-top: 15px;                               /* Space above */
+  font-style: italic;                             /* Italic style */
+}
+
+
+#countdown {
+  font-size: 50px;                                /* Very large countdown */
+  margin-top: 10px;                               /* Space above countdown */
+  display: inline-block;                          /* Inline block for styling */
+  transition: transform 0.3s, color 0.3s;         /* Smooth animation for transform & color */
+  padding: 10px 20px;                             /* Inner spacing */
+  border: 3px solid green;                      /* Green border */
+  border-radius: 10px;                            /* Rounded corners */
+}

@@ -1,0 +1,174 @@
+/* navigation bar */
+.navbar {
+    display: flex;                              /* Use flexbox for layout */
+    justify-content: space-between;             /* Space between logo and links */
+    align-items: center;                        /* Vertically center items */
+    padding: 15px 20px;                         /* Padding around navbar */
+    background-color: rgb(211, 84, 0);        /* Dark orange background (same as home page) */
+    color: white;                             /* White text by default */
+    position: relative;                         /* Needed for z-index positioning of mobile menu */
+    z-index: 1000;                              /* Ensures navbar appears above other content */
+}
+
+
+/* logo styling */
+.logo {
+    font-size: 28px;                            /* Larger font for logo */
+    font-weight: bold;                          /* Bold text */
+}
+
+
+/* navigation links container */
+.nav-links {
+    display: flex;                              /* Horizontal layout */
+    list-style: none;                           /* Remove bullet points */
+}
+
+
+/* each navigation link item */
+.nav-links li {
+    margin-left: 20px;                          /* Space between links */
+}
+
+
+/* navigation link styling */
+.nav-links a {
+    color: white;                             /* White text */
+    text-decoration: none;                      /* Remove underline */
+    font-weight: 500;                           /* Medium weight */
+}
+
+
+/* hover effect for links */
+.nav-links a:hover {
+    text-decoration: underline;                 /* Underline on hover */
+}
+
+
+/* hamburger menu */
+.hamburger {
+    display: none;                              /* Hidden on desktop */
+    flex-direction: column;                     /* Stack the lines vertically */
+    cursor: pointer;                            /* Pointer cursor */
+}
+
+.hamburger span {
+    display: block;                             /* Make each line visible */
+    height: 3px;                                /* Line thickness */
+    width: 25px;                                /* Line width */
+    background: white;                        /* Line color */
+    margin: 4px 0;                              /* Spacing between lines */
+}
+
+
+/* mobile menu */
+@media (max-width: 760px) {
+    .nav-links {
+        display: none;                                      /* hide links by default on mobile */
+        flex-direction: column;                             /* Stack vertically */
+        width: 50%;                                         /* Width of mobile menu */
+        background-color: rgba(217, 197, 171, 0.585);     /* Semi-transparent bac */
+        position: absolute;                                 /* Position relative to navbar */
+        top: 60px;                                          /* Position below navbar */
+        right: 0;                                           /* Align to right */
+        padding: 10px;                                      /* Inner spacing */
+        border-radius: 5px;                                 /* Rounded corners */
+        z-index: 1001;                                      /* Above hero image */
+    }
+
+    .nav-links.show {
+        display: flex;                                      /* Show menu when active */
+    }
+
+    .nav-links li {
+        margin: 15px 0;                                     /* Space between links */
+        text-align: center;                                 /* Center text */
+    }
+
+    .nav-links a.active {
+        text-decoration: underline;                         /* Underline active link */
+    }
+
+    .hamburger {
+        display: flex;                                      /* Show hamburger on mobile */
+    }
+}
+
+
+/* footer styles */
+footer {
+    background-color: rgb(84, 76, 71);                    /* Dark gray background */
+    color: white;                                         /* White text */
+    padding: 25px 20px;                                     /* Spacing */
+    text-align: center;                                     /* Centered text */
+}
+
+
+/* footer links */
+footer a {
+    color: rgb(183, 170, 170);                            /* Light gray links */
+    margin: 0 10px;                                         /* Horizontal spacing between links */
+    text-decoration: none;                                  /* Remove underline */
+}
+
+
+/* hover effect for footer links */
+footer a:hover {
+    text-decoration: underline;                             /* Underline on hover */
+}
+
+
+/* newsletter input field */
+.newsletter input {
+    padding: 8px;                                            /* Inner spacing */
+    width: 220px;                                            /* Fixed width */
+    margin-right: 5px;                                       /* Space between input and button */
+    border: none;                                            /* Remove default border */
+    border-radius: 3px;                                      /* Slightly rounded corners */
+}
+
+
+/* newsletter submit button */
+.newsletter button {
+    padding: 8px 12px;                                      /* Inner spacing */
+    background-color: rgb(211, 84, 0);                    /* Dark orange */
+    border: none;                                           /* Remove border */
+    border-radius: 3px;                                     /* Slight rounding */
+    color: white;                                         /* White text */
+    cursor: pointer;                                        /* Pointer on hover */
+}
+
+
+/* hover effect for newsletter button */
+.newsletter button:hover {
+    background-color: rgb(255, 173, 96);                  /* Light orange on hover */
+}
+
+
+/* smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* reveal animation */
+.reveal {
+  opacity: 0;                                               /* Hidden by default */
+  transform: translateY(20px);                              /* Start slightly lower */
+  transition: all 0.6s ease;                                /* Smooth transition */
+}
+
+.reveal.active {
+  opacity: 1;                                               /* Show element */
+  transform: translateY(0);                                 /* Move to original position */
+}
+
+
+/* transition effects for buttons and links */
+button, .nav-links a {
+  transition: transform 0.2s ease, background-color 0.3s ease;       /* Smooth hover effect */
+}
+
+button:hover, .nav-links a:hover {
+  transform: scale(1.05);                                   /* Slight zoom on hover */
+}

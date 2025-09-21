@@ -1,0 +1,81 @@
+/* body styles */
+body{
+    font-family: Arial;                                              /* Set default font for the page */
+}
+
+
+/* hero section */
+.hero {
+    text-align: center;                                              /* Center all content inside hero */
+    padding: 80px 20px;                                              /* Top & bottom padding 80px, left & right 20px */
+    background-image: url('../images/healthy-food.jpeg');            /* Hero background image */
+    background-size: cover;                                          /* Cover entire hero area */
+    background-position: center;                                     /* Center the image */
+    color: rgb(255, 243, 224);                                     /* Light text color for contrast */
+}
+
+.hero h1 {
+    font-size: 50px;                                                  /* Large heading for hero */
+    margin-bottom: 20px;                                              /* Space below heading */
+}
+
+#healthQuote {
+    font-size: 20px;                                                  /* Medium font size for quote */
+    font-style: italic;                                               /* Italic style for emphasis */
+    opacity: 1;                                                       /* Fully visible */
+}
+
+
+/* intro section */
+.intro {
+    padding: 40px 20px;                                               /* Padding around content */
+    text-align: center;                                               /* Center the text */
+    background-color: white;                                        /* White background */
+}
+
+.intro h2 {
+    font-size: 28px;                                                   /* Subheading size */
+    margin-bottom: 15px;                                               /* Space below heading */
+    color: rgb(211, 84, 0);                                          /* Dark orange color */
+}
+
+.intro p {
+    font-size: 18px;                                                    /* Paragraph text size */
+    color: rgb(85, 85, 85);                                           /* Dark gray text */
+    max-width: 700px;                                                   /* Limit paragraph width */
+    margin: 0 auto;                                                     /* Center paragraph */
+    line-height: 1.6;                                                   /* Increase line spacing for readability */
+}
+
+
+/*  health tips section  */
+.health-tips {
+    padding: 30px 20px;                                                 /* Padding around the section */
+    text-align: center;                                                 /* Center the text */
+    background-color: rgb(255, 245, 180);                             /* Light yellow background */
+}
+
+.health-tips h2 {
+    margin-bottom: 25px;                                                /* Space below heading */
+    font-size: 28px;                                                    /* Subheading size */
+    color: rgb(51, 51, 51);                                           /* Dark gray text */
+}
+
+#tipsContainer {
+    font-size: 20px;                                                    /* Medium text size for tips */
+    color: rgb(137, 137, 137);                                        /* Gray text color */
+}
+
+
+/* tips card styling */
+.tip-card {
+    background-color: rgb(255, 248, 225);                             /* Light cream background */   
+    background-color: white;                                          /* Overwrites previous background to white */
+    padding: 20px 25px;                                                 /* Padding inside the card */
+    max-width: 600px;                                                   /* Limit card width */
+    margin: 0 auto;                                                     /* Center the card */
+    font-size: 20px;                                                    /* Text size */
+    color: rgb(93, 64, 55);                                           /* Brownish text */
+    text-align: center;                                                 /* Center the text */
+}
+

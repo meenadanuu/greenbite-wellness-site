@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindfulness & Meditation - GreenBite</title>
+
+  <!-- Favicon + PWA -->
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#d35400">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/navfooter.css">
+  <link rel="stylesheet" href="../css/mindfulness.css">
+
+  <!-- JS -->
+  <script src="../js/navfooter.js" defer></script>
+  <script src="../js/mindfulness.js" defer></script>
+
+</head>
+<body>
+
+
+<!-- main mindfulness section -->  
+<section class="mindfulness-section reveal">
+  <h1>Mindfulness & Meditation</h1>
+
+
+  <!-- guided breathing exercise -->
+  <section class="breathing-section reveal">
+    <h2>Breathing Exercise</h2>
+    <div class="breathing-container" id="breathingCircle">Inhale</div>
+  </section>
+
+
+  <!-- meditation timer tool -->
+  <section class="timer-section reveal">
+    <h2>Meditation Timer (minutes)</h2>
+    <input type="number" id="sessionTime" min="1" value="5">
+    <button id="startTimer">Start</button><br><br>
+    <div id="timerDisplay">00:00</div><br>
+  </section>
+
+
+  <!-- ambient sound player -->
+  <section class="ambient-soound-section reveal">
+    <button id="soundToggle">Play Sound</button>
+    <audio id="ambientAudio" loop>
+      <source src="../audio/ambient.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+
+  <!-- completed sessions -->
+  <section class="completed-sessions reveal">
+    <p>Completed Sessions: <span id="completedCount">0</span></p>
+  </section>
+</section>  
+
+</body>
+</html>

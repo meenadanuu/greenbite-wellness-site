@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Feedback - GreenBite</title>
+
+  <!-- Favicon + PWA -->
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#d35400">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/navfooter.css">
+  <link rel="stylesheet" href="../css/contact.css">
+
+  <!-- JS -->
+  <script src="../js/navfooter.js" defer></script>
+  <script src="../js/contact.js" defer></script>
+
+</head>
+<body>
+
+
+  <!-- contact section -->
+  <section class="contact-section reveal">
+    <h1>Contact & Feedback</h1>
+
+
+    <!-- contact form -->
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your Email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Your Message" required></textarea><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+
+    <!-- confirmation message (hidden initially) -->
+    <p id="confirmation" style="color:rgb(13, 118, 13); font-weight:bold; display:none;"></p>
+
+
+    <!-- google map selection -->
+    <section class="map-section reveal">
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126738.282!2d79.8462!3d6.048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2574b53e237c1%3A0x123456789abcdef!2sAmbalangoda!5e0!3m2!1sen!2slk!4v1690000000000!5m2!1sen!2slk" 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>                          <!-- Embedded Google map showing location -->
+      </div>
+    </section> 
+    
+
+    <!-- FAQ accordion section -->
+    <section class="faq-section reveal">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <button class="faq-question">What is GreenBite?</button>
+        <div class="faq-answer">GreenBite is your guide to a healthier lifestyle with tips, recipes and workouts.</div>
+
+        <button class="faq-question">How can I subscribe?</button>
+        <div class="faq-answer">You can subscribe using the newsletter section at the bottom of any page.</div>
+
+        <button class="faq-question">Do you offer personalized workout plans?</button>
+        <div class="faq-answer">Yes! Use the Workout Generator page to get plans based on body part and equipment.</div>
+      </div>
+    </section>
+  </section>
+
+</body>
+</html>
