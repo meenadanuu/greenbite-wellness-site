@@ -15,9 +15,9 @@
 .logo {
     font-size: 28px;                            /* Larger font for logo */
     font-weight: bold;
-    color: white;              /* make it white */
-    text-decoration: none;     /* remove underline */
-    cursor: pointer;                          /* Bold text */
+    color: white;                             /* make it white */
+    text-decoration: none;                      /* remove underline */
+    cursor: pointer;                            /* Bold text */
 }
 
 
