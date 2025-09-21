@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // load navbar
-    fetch("../html/navbar.html")
+    fetch("navbar.html")
         .then(res => res.text())                                                // Convert response to text
         .then(data => {
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // load footer
-    fetch("../html/footer.html")
+    fetch("footer.html")
         .then(res => res.text())
         .then(data => {
 
@@ -82,7 +82,7 @@ window.addEventListener("load", revealOnScroll);
 
 // service worker registration (PWA support)
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("../sw.js")
+  navigator.serviceWorker.register("sw.js")
     .then(() => console.log("Service Worker registered"))                   // Success
     .catch(err => console.log("SW registration failed: ", err));            // Failure
 }
