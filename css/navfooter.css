@@ -40,7 +40,7 @@
 
 
 /* hover effect for links */
-.nav-links a:hover, .nav-links a.active  {
+.nav-links a:hover {
     text-decoration: underline;                 /* Underline on hover */
 }
 
@@ -62,7 +62,7 @@
 
 
 /* mobile menu */
-@media (max-width: 760px) {
+@media (max-width: 768px) {
     .nav-links {
         display: none;                                      /* hide links by default on mobile */
         flex-direction: column;                             /* Stack vertically */
