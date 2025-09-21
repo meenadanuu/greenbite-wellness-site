@@ -1,29 +1,22 @@
 <nav class="navbar">
-    <a href="index.html" class="logo">GreenBite</a>
+  <div class="logo">GreenBite</div>
 
-    <!-- Hamburger for mobile -->
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
 
-    <!-- Navigation links -->
-    <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
-        <li><a href="calculator.html">Calculator</a></li>
-        <li><a href="workout.html">Workout</a></li>
-        <li><a href="mindfulness.html">Mindfulness</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <!-- hamburger menu for mobile view -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  
+  <!-- navigation links -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="recipes.html">Recipes</a></li>
+    <li><a href="calculator.html">Calculator</a></li>
+    <li><a href="workout.html">Workout</a></li>
+    <li><a href="mindfulness.html">Mindfulness</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </nav>
-
-<script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
-
-    hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
-    });
-</script>
