@@ -102,14 +102,16 @@ h1 {
 }
 
 
-/* mobile view */
 @media (max-width: 760px) {
     #recipesContainer {
-        grid-template-columns: repeat(2, 1fr);              /* 2 columns on mobile */
-        gap: 15px;                                          /* Slightly smaller gap for mobile */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+
+        justify-content: center;                        /* center the grid items horizontally */
+        padding: 0 10px;                                /* optional: some side padding */
     }
 
     .card img {
-        height: 120px;                                      /* Smaller image height for mobile */
+        height: 120px;
     }
 }
