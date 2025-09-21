@@ -40,7 +40,7 @@
 
 
 /* hover effect for links */
-.nav-links a:hover {
+.nav-links a:hover, .nav-links a.active  {
     text-decoration: underline;                 /* Underline on hover */
 }
 
