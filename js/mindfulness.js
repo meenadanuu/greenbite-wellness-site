@@ -70,11 +70,11 @@ document.addEventListener("DOMContentLoaded", function() {
   // toggle play/pause sound
   soundToggle.addEventListener("click", function() {
     if (ambientAudio.paused) {
-      ambientAudio.play();
-      soundToggle.innerText = "Pause Sound";                            // Update button text
+      ambientAudio.play().catch(err => console.log("Play blocked:", err));
+      soundToggle.innerText = "Pause Sound";
     } else {
       ambientAudio.pause();
-      soundToggle.innerText = "Play Sound";                             // Update button text
+      soundToggle.innerText = "Play Sound";
     }
   });
 });
