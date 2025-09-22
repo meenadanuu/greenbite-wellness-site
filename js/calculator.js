@@ -7,6 +7,12 @@ function calculate() {
     var weight = parseFloat(document.getElementById("weight").value);
     var activity = parseFloat(document.getElementById("activity").value);
 
+    
+    if (!age || !gender || !height || !weight || !activity) {
+    alert("Please fill all fields!");
+    return;
+    }
+
 
     // calculator BMR
     var bmr;
